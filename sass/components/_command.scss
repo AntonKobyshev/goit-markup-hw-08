@@ -1,0 +1,22 @@
+.command {
+  @include section;
+  background-color: var(--section-comand-bg-color);
+}
+
+.comand__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.command__persons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.command__list-item:not(:last-child) {
+  margin-right: var(--card-set-gap);
+}

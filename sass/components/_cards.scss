@@ -1,0 +1,85 @@
+// cards command
+.card {
+  box-shadow: var(--card-shadow);
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__content {
+  padding: 30px;
+}
+
+.card__person-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.card__person-position {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+// cards portfolio
+.portfolio-card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card__overlay {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  transition: transform 250ms var(--timing-function);
+
+  .portfolio__item:hover & {
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+  }
+}
+
+.portfolio-card__overlay-text {
+  position: absolute;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-align: left;
+}
+
+.portfolio-card__content {
+  padding: 20px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.portfolio-card__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio-card__paragraph {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,44 @@
+.clients {
+  @include section;
+}
+
+.clients__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+}
+
+.client__clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client__logo {
+  width: 106px;
+  height: 60px;
+}
+
+.client__logo-border {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  outline: 1px solid var(--icon-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+
+  transition: outline 250ms var(--timing-function), fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
