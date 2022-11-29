@@ -3,21 +3,23 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   text-align: center;
 
+  // mobile
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: $mobile;
     
   }
 
+  // tablet
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: $tablet;
   
   }
 
+  // desktop
   @media screen and (min-width: 1200px) {
-    width: 768px;
+    width: $desktop;
 
   }
 }
