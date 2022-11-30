@@ -3,5 +3,10 @@
 }
 
 .nav__list__header {
-  margin-left: 93px;
+margin-left: 88px;
+
+  @media screen and (min-width: $desktop) {
+      margin-left: 93px;
+    }
+  
 }

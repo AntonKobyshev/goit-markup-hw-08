@@ -1,5 +1,4 @@
 .preferences {
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -10,17 +9,18 @@
 .preferences__item {
   width: auto;
   text-align: center;
-  
-  @media screen and (max-width: 767.98px) {
-      &:not(:last-child) {
-          margin-bottom: 30px;
-        }
+
+  @media screen and (max-width: #{$tablet - 0.02}) 
+  {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
 
   @media screen and (min-width: $tablet) {
     width: 354px;
     text-align: left;
-    }
+  }
 
   @media screen and (min-width: $desktop) {
     width: 270px;
@@ -38,11 +38,11 @@
 
   @media screen and (min-width: $tablet) {
     width: auto;
-    }
+  }
 
   @media screen and (min-width: $desktop) {
     width: 270px;
-    }
+  }
 }
 
 .preferences__title {

@@ -1,11 +1,20 @@
 .nav {
   display: flex;
   align-items: center;
-}
+  @media screen and (max-width: #{$tablet - 0.02}) {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  }
+  }
 
 .nav__list {
   display: flex;
-}
+ 
+  @media screen and (max-width: #{$tablet - 0.02}) {
+      display: none;
+      }
+    }
+  
 
 .nav__item:not(:last-child) {
   margin-right: 50px;
@@ -50,8 +59,17 @@
 }
 
 .contacts {
-  display: flex;
   margin-left: auto;
+
+  @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-left: auto;
+    }
+  
+
+  @media screen and (max-width: #{$tablet - 0.02}) {
+      display: none;
+    }
 }
 
 .contacts__link {
@@ -74,7 +92,12 @@
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+  
+  @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
+  
 }
 
 .contacts__envelope-icon,
