@@ -13,10 +13,18 @@
 }
 
 .command__persons-list {
-  display: flex;
+  
   justify-content: center;
+  @media screen and (min-width: $tablet) {
+      display: flex;
+    }
 }
 
+ 
+
 .command__list-item:not(:last-child) {
-  margin-right: var(--card-set-gap);
+  @media screen and (min-width: $tablet) {
+      margin-right: var(--card-set-gap);
+    }
+  
 }

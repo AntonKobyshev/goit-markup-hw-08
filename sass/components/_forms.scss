@@ -43,7 +43,7 @@
     width: 100%;
   }
 
-  @media screen and (max-width: #{$desktop - 0.02}) {
+  @media screen and (min-width: #{$tablet - 0.02}) {
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
@@ -52,7 +52,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    min-width: 358px;
+    max-width: 358px;
     margin-right: 12px;
     display: block;
   }

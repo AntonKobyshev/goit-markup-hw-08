@@ -24,17 +24,20 @@
     background-color: var(--button-main-active-color);
   }
 
+  
   // subscribe footer
 
   &--subscribe {
     display: flex;
-    min-width: 200px;
+    width: 200px;
+    height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     @media screen and (max-width: #{$desktop - 0.02}) {
       margin-left: auto;
       margin-right: auto;
     }
   }
+
 
   // submit modal
 
@@ -47,6 +50,14 @@
     min-width: 200px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button__hero {
+  margin-bottom: 118px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 200px;
   }
 }
 
@@ -88,7 +99,6 @@
     color: var(--white-color);
     background-color: var(--accent-color);
     box-shadow: var(--button-filter-shadow);
-
   }
 }
 
