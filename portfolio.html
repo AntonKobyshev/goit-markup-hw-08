@@ -245,10 +245,12 @@
     </section>
   </main>
   <!-- footer -->
-    <footer class="footer">
-      <div class="container footer__container">
-        <div>
-          <a href="./index.html" class="logo footer__logo">Web<span class="logo__studio logo__studio--white">Studio</span></a>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__tablet">
+        <div class="footer__contacts">
+          <a href="./index.html" class="logo footer__logo">Web<span
+              class="logo__studio logo__studio--white">Studio</span></a>
           <address>
             <ul class="adress">
               <li>
@@ -298,35 +300,49 @@
             </li>
           </ul>
         </div>
-        <div class="email-imput">
-          <p class="email-imput__title">Підпишіться на розсилку</p>
-          <form class="email-imput__form" name="email" autocomplete="on" novalidate>
-            <label>
-              <input class="email-imput__box" type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="button button--subscribe" type="submit">Підписатися
-              <svg class="button__send-icon" width="24" height="24">
-                <use href="./images/icons.svg#send-icon"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
       </div>
-    </footer>
+      <div class="email-imput">
+        <p class="email-imput__title">Підпишіться на розсилку</p>
+        <form class="email-imput__form" name="email" autocomplete="on" novalidate>
+          <label>
+            <input class="email-imput__box" type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button class="button button--subscribe" type="submit">Підписатися
+            <svg class="button__send-icon" width="24" height="24">
+              <use href="./images/icons.svg#send-icon"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
     <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="24" height="16" class="menu-close">
+        <svg width="19" height="19" class="menu-close">
           <use href="./images/icons.svg#icon-menu-close"></use>
         </svg>
       </button>
     
       <ul class="mobile-menu">
-        <li><a href="" class="link">Студія</a></li>
-        <li><a href="" class="link">Портфоліо</a></li>
-        <li><a href="" class="link">Контакти</a></li>
+        <li><a href="./index.html" class="mobile-menu__link">Студія</a></li>
+        <li><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+        <li><a href="" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"
+            class="mobile-contacts__mail">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a href="#" class="mobile-socials__link">Instagram</a></li>
+        <li class="mobile-socials__item"><a href="#" class="mobile-socials__link">Twitter</a></li>
+        <li class="mobile-socials__item"><a href="#" class="mobile-socials__link">Facebook</a></li>
+        <li class="mobile-socials__item"><a href="#" class="mobile-socials__link">LinkedIn</a></li>
       </ul>
     </div>
+
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

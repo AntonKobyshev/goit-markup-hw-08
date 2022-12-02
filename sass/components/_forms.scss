@@ -5,7 +5,12 @@
 }
 
 .email-imput__form {
-  display: flex;
+  width: auto;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .email-imput__title {
@@ -20,10 +25,10 @@
 
 .email-imput__box {
   display: block;
-  margin-right: 12px;
-  padding-left: 16px;
-  min-width: 358px;
+  width: auto;
   min-height: 50px;
+
+  padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -31,6 +36,26 @@
   border-radius: 4px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: #{$tablet - 0.02}) {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: #{$desktop - 0.02}) {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 358px;
+    margin-right: 12px;
+    display: block;
+  }
 }
 
 // forms modal
@@ -75,9 +100,14 @@
   }
 
   &--comments::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
+
+    @media screen and (max-width: #{$desktop - 0.02}) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
 
     color: rgba(117, 117, 117, 0.5);
   }
@@ -107,11 +137,15 @@
 }
 
 .form__checkbox-label {
-  margin-left: 13px;
   margin-top: 20px;
   margin-right: auto;
   display: flex;
   align-items: center;
+  
+  @media screen and (min-width: #{$desktop - 0.02}) {
+  margin-left: 13px;
+  
+  }
 }
 
 .form__checkbox-icon {
@@ -138,9 +172,16 @@
 }
 
 .form__checkbox-text {
+
+  font-size: 12px;
+  line-height: calc(14/12);
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: #{$desktop - 0.02}) {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  }
+  
 
   &--contract {
     color: var(--accent-color);

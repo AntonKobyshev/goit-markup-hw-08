@@ -1,4 +1,9 @@
 .what-we-do {
+
+  @media screen and (max-width: #{$desktop - 0.02}) {
+      display: none;
+    }
+  
   @include section;
   padding-top: 0;
 }

@@ -1,12 +1,45 @@
 .footer {
-  display: flex;
-  align-items: baseline;
   background-color: var(--foorter-hero-bg-color);
+}
+
+.footer__container {
+  align-items: baseline;
+
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .social__footer {
-  margin-left: 70px;
-  margin-right: 93px;
+  @media screen and (max-width: #{$tablet - 0.02}) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: #{$tablet - 0.02}) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+    margin-right: 94px;
+  }
+}
+
+.footer__contacts {
+  @media screen and (max-width: #{$tablet - 0.02}) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__tablet {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
 }
