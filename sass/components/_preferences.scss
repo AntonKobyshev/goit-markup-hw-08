@@ -10,8 +10,7 @@
   width: auto;
   text-align: center;
 
-  @media screen and (max-width: #{$tablet - 0.02}) 
-  {
+  @media screen and (max-width: #{$tablet - 0.02}) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }

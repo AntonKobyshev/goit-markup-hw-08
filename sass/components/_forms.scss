@@ -141,10 +141,9 @@
   margin-right: auto;
   display: flex;
   align-items: center;
-  
+
   @media screen and (min-width: #{$desktop - 0.02}) {
-  margin-left: 13px;
-  
+    margin-left: 13px;
   }
 }
 
@@ -172,16 +171,14 @@
 }
 
 .form__checkbox-text {
-
   font-size: 12px;
-  line-height: calc(14/12);
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
 
   @media screen and (min-width: #{$desktop - 0.02}) {
-  font-size: 14px;
-  line-height: 1.71;
+    font-size: 14px;
+    line-height: 1.71;
   }
-  
 
   &--contract {
     color: var(--accent-color);

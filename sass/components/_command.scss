@@ -1,6 +1,13 @@
 .command {
-  @include section;
   background-color: var(--section-comand-bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .comand__title {
@@ -9,22 +16,29 @@
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .command__persons-list {
-  
   justify-content: center;
+
   @media screen and (min-width: $tablet) {
-      display: flex;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
- 
-
 .command__list-item:not(:last-child) {
-  @media screen and (min-width: $tablet) {
-      margin-right: var(--card-set-gap);
-    }
-  
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }

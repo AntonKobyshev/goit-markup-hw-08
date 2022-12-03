@@ -1,14 +1,38 @@
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 0px;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+}
+
+.portfolio-card {
+  display: inline-block;
+  min-height: 100%;
 }
 
 .portfolio__item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 354px;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
 
   transition: box-shadow 250ms var(--timing-function);
 

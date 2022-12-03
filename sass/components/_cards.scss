@@ -6,6 +6,9 @@
 }
 
 .card__content {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px;
 }
 
@@ -26,6 +29,7 @@
 }
 
 // cards portfolio
+
 .portfolio-card__thumb {
   position: relative;
   overflow: hidden;
@@ -61,6 +65,9 @@
 }
 
 .portfolio-card__content {
+  display: block;
+  height: auto;
+
   padding: 20px 24px;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
@@ -82,4 +89,13 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-card__paragraph-first {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 35.5px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+  }
 }
