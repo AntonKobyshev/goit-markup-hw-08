@@ -887,6 +887,28 @@ p {
   }
 }
 
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.menu .test {
+  display: inline-block;
+}
+
+.menu {
+  height: 20px;
+  width: 100px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menuvisible {
+  width: 700px;
+}
+
 /* Модалка  */
 .backdrop {
   position: fixed;
@@ -1328,17 +1350,6 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio-card__paragraph-first {
-    margin-bottom: 35.5px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-card__paragraph-first {
-    margin-bottom: 0px;
-  }
 }
 
 .address__link {

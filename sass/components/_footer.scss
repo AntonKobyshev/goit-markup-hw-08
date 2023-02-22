@@ -46,3 +46,24 @@
     margin-bottom: 60px;
   }
 }
+
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.menu .test {
+  display: inline-block;
+}
+
+.menu {
+  height: 20px;
+  width: 100px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.menuvisible {
+  width: 700px;
+}
